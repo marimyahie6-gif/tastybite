@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+         <meta charset="UTF-8" />
+        <meta name="viewport"content="width=device-width, initial-scale=1.0" />
+        <title>Recipe Details | TastyBite</title>
+        <link rel="stylesheet" href="assets/css/style.css" />
+    </head>
+    <body>
+          <header class="site-header">
+    <div class="container nav">
+      <a href="index.html" class="logo"><span class="logo-mark">TB</span> TastyBite</a>
+      <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="navLinks">Menu</button>
+      <nav class="nav-links" id="navLinks" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="recipes.html">Recipes</a>
+        <a href="index.html#about">About</a>
+        <a href="recipes.html" class="btn primary-btn small-btn">Explore Recipes</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="container" id="detailsRoot">
+      <div class="state"><div class="spinner"></div><p>Loading recipe...</p></div>
+    </div>
+  </main>
+  
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a href="index.html" class="logo"><span class="logo-mark">TB</span> TastyBite</a>
+          <p>A simple recipe website built with HTML, CSS and vanilla JavaScript using real API data.</p>
+        </div>
+        <div class="footer-links">
+          <h4>Quick links</h4>
+          <a href="index.html">Home</a>
+          <a href="recipes.html">Recipes</a>
+          <a href="index.html#about">About</a>
+        </div>
+      </div>
+      <p class="copyright">&copy; <span id="year"></span> TastyBite. All rights reserved.</p>
+    </div>
+  </footer>
+        
+   <script src="assets/js/api.js"></script>
+   <script src="assets/js/recipe-details.js"></script>
+    </body>
+</html>
